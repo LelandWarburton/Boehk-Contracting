@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boehk Contracting - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="container">
+            <nav>
+                <!-- Hamburger Button -->
+                <button class="mobile-menu-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <!-- Navigation Menu -->
+                <ul class="nav-menu">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="services.html">What We Build</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header class="main-header">
+        <div class="left">
+            <a href="tel:+1-780-812-5795">
+                <img src="images/P.png" alt="Phone Icon" class="phone-icon">
+            </a>
+            <p>Call Us Now</p>
+        </div>
+        <div class="center">
+            <div class="logo">
+                <img src="images/LOGO.png" alt="Boehk Contracting Logo">
+            </div>
+        </div>
+        <div class="right">
+            <a href="contact.html">
+                <img src="images/e.png" alt="Email Icon" class="email-icon">
+            </a>
+            <p>Request a Quote</p>
+        </div>
+    </header>
+
+    <section class="image-banner">
+        <div class="banner-text">About Boehk Contracting</div>
+    </section>
+
+    <section class="about-container">
+        <div class="about-content">
+            <h2>Who We Are</h2>
+            <p>At Boehk Contracting, we are a dedicated team of professionals committed to providing high-quality construction services that stand the test of time. With a strong foundation built on experience, integrity, and innovation, we take pride in delivering exceptional results for both residential and commercial projects. Our reputation is grounded in a consistent track record of completing projects on time, within budget, and to the highest standards of excellence.
+
+            Founded with a passion for transforming ideas into tangible structures, Boehk Contracting has been a trusted name in the construction industry for over [insert number] years. Our experienced team is equipped with a diverse skill set and an unwavering commitment to craftsmanship. From initial concept and design to the final build, we collaborate closely with our clients to ensure that every detail meets their vision.</p>
+
+            <h2>Our Mission</h2>
+            <p>We aim to provide top-tier construction services, ensuring every project is built with integrity, durability, and craftsmanship. Customer satisfaction is our top priority.</p>
+
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Experienced and skilled professionals</li>
+                <li>High-quality materials and craftsmanship</li>
+                <li>On-time project completion</li>
+                <li>Transparent pricing and honest communication</li>
+            </ul>
+        </div>
+        <div class="about-image">
+            <img src="images/IMG_8332.png" alt="Construction Work">
+        </div>
+    </section>
+
+    <section class="ready-to-work">
+        <div class="container">
+            <h2>Ready to Work with Us?</h2>
+            <a href="contact.html" class="contact-btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Boehk Contracting. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navMenu = document.querySelector('.nav-menu');
+
+            if (mobileMenuBtn && navMenu) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    mobileMenuBtn.classList.toggle('active');
+                });
+            } else {
+                console.error('Menu button or navigation menu not found!');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta name="description" content="Explore past projects by Boehk Contracting, showcasing excellence in construction and project management. From residential to commercial, we build with precision and quality.">
+                    <title>Past Projects - Boehk Contracting</title>
+                    <link rel="stylesheet" href="styles.css">
+                    <script>
+                        // Function to open lightbox
+                        function openLightbox(imageSrc) {
+                            const lightbox = document.getElementById("lightbox");
+                            const lightboxImg = document.getElementById("lightbox-img");
+                            lightboxImg.src = imageSrc;
+                            lightbox.style.display = "block";
+                        }
+
+                        // Function to close lightbox
+                        function closeLightbox() {
+                            const lightbox = document.getElementById("lightbox");
+                            lightbox.style.display = "none";
+                        }
+                    </script>
+                </head>
+                <body>
+                    <header class="top-header">
+                        <div class="container">
+                            <!-- Hamburger Button -->
+                            <button class="mobile-menu-btn">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </button>
+                            <!-- Navigation Menu -->
+                            <nav>
+                                <ul class="nav-menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="services.html">What We Build</a></li>
+                                    <li><a href="projects.html" class='active'>Projects</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </header>
+
+                    <header class="main-header">
+                        <div class="left">
+                            <a href="tel:+1-780-812-5795">
+                                <img src="images/P.png" alt="Phone Icon" class="phone-icon">
+                            </a>
+                            <p>Call Us Now</p>
+                        </div>
+                        <div class="center">
+                            <div class="logo">
+                                <img src="images/LOGO.png" alt="Boehk Contracting Logo">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <a href="contact.html">
+                                <img src="images/e.png" alt="Email Icon" class="email-icon">
+                            </a>
+                            <p>Request a Quote</p>
+                        </div>
+                    </header>
+
+                    <section class="container">
+                        <h1>Our Past Projects</h1>
+                        <p>Here are some of the past projects that showcase our expertise in construction and project management. Click on an image to view it in detail.</p>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="images/IMG_3543.png" alt="Project 1" onclick="openLightbox('images/IMG_3543.png')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_0344.png" alt="Project 2" onclick="openLightbox('images/IMG_0344.png')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_2673.png" alt="Project 3" onclick="openLightbox('images/IMG_2673.png')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_2516.jpeg" alt="Project 4" onclick="openLightbox('images/IMG_2516.jpeg')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_3563.png" alt="Project 5" onclick="openLightbox('images/project5.jpg')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_1128.png" alt="Project 6" onclick="openLightbox('images/IMG_1128.png')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_2498.jpeg" alt="Project 7" onclick="openLightbox('images/IMG_2498.jpeg')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_0154.png" alt="Project 8" onclick="openLightbox('images/IMG_0154.png')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_2514.jpeg" alt="Project 9" onclick="openLightbox('images/IMG_2514.jpeg')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_2517.jpeg" alt="Project 10" onclick="openLightbox('images/IMG_2517.jpeg')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_2521.jpeg" alt="Project 11" onclick="openLightbox('images/IMG_2521.jpeg')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_2530.jpeg" alt="Project 12" onclick="openLightbox('images/2530.png')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_2545.jpeg" alt="Project 13" onclick="openLightbox('images/IMG_2545.jpeg')">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="images/IMG_2520.jpeg" alt="Project 14" onclick="openLightbox('images/IMG_2520.jpeg')">
+                            </div>
+                        </div>
+                    </section>
+
+                    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                        <span class="close">&times;</span>
+                        <img id="lightbox-img" src="">
+                    </div>
+
+                    <section class="ready-to-work">
+                        <div class="container">
+                            <h2>Ready to Work with Us?</h2>
+                            <a href="contact.html" class="contact-btn">Get in Touch</a>
+                        </div>
+                    </section>
+
+                    <footer>
+                        <div class="container">
+                            <p>&copy; 2025 Boehk Contracting. All Rights Reserved.</p>
+                        </div>
+                    </footer>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+                            const navMenu = document.querySelector('.nav-menu');
+
+                            if (mobileMenuBtn && navMenu) {
+                                mobileMenuBtn.addEventListener('click', function() {
+                                    navMenu.classList.toggle('active');
+                                    mobileMenuBtn.classList.toggle('active');
+                                });
+                            } else {
+                                console.error('Menu button or navigation menu not found!');
+                            }
+                        });
+                    </script>
+                </body>
+                </html>
