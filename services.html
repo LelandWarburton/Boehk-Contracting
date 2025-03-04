@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Build</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boehk Contracting - Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="active_page.js"></script>
+    </head>
+
+    <body>
+        <header class="top-header">
+            <div class="container">
+                <nav>
+                    <!-- Hamburger Button -->
+                    <button class="mobile-menu-btn">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <!-- Navigation Menu -->
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html" class='active'>What We Build</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <header class="main-header">
+            <div class="left">
+                <a href="tel:+1-780-812-5795">
+                    <img src="images/P.png" alt="Phone Icon" class="phone-icon">
+                </a>
+                <p>Call Us Now</p>
+            </div>
+            <div class="center">
+                <div class="logo">
+                    <img src="images/LOGO.png" alt="Boehk Contracting Logo">
+                </div>
+            </div>
+            <div class="right">
+                <a href="contact.html">
+                    <img src="images/e.png" alt="Email Icon" class="email-icon">
+                </a>
+                <p>Request a Quote</p>
+            </div>
+        </header>
+    
+    <section class="image-banner">
+        <div class="banner-content">
+            <h1 class="banner-text">What We Build</h1>
+        </div>
+    </section>
+    
+    <section id="content-area">
+        <div class="text-box">
+            <h2>Our Expertise</h2>
+            <p>At Boehk Contracting, we specialize in delivering high-quality construction services tailored to meet the unique needs of our clients. From residential and commercial builds to renovations and custom projects, our skilled team is committed to precision, durability, and efficiency. We take pride in our expertise in structural framing, concrete work, and interior finishing, ensuring every project is built to last. Whether it’s a large-scale development or a small custom build, we bring craftsmanship, innovation, and attention to detail to every job.</p>
+        </div>
+        <div class="image-box">
+            <img src="images/IMG_0154.png" alt="Project Image 1">
+            <img src="images/IMG_7998.png" alt="Project Image 2">
+        </div>
+    </section>
+    
+
+
+        <section class="ready-to-work">
+            <div class="container">
+                <h2>Ready to Work with Us?</h2>
+                <a href="contact.html" class="contact-btn">Get in Touch</a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Boehk Contracting. All Rights Reserved.</p>
+            </div>
+    </footer>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+                const navMenu = document.querySelector('.nav-menu');
+
+                if (mobileMenuBtn && navMenu) {
+                    mobileMenuBtn.addEventListener('click', function() {
+                        navMenu.classList.toggle('active');
+                        mobileMenuBtn.classList.toggle('active');
+                    });
+                } else {
+                    console.error('Menu button or navigation menu not found!');
+                }
+            });
+        </script>
+</body>
+</html>
